@@ -1,0 +1,51 @@
+package lab3;
+
+
+class Q3 {
+    public void no_of_Arguments(int...a){
+        System.out.println("Length of arguments "+a.length);
+    }
+    public void max(int...a){
+        int max=-1000000;
+        for(int i=0;i<a.length;i++){
+            if(max<a[i]){
+                max=a[i];
+            }
+        }
+        System.out.println("Max number is "+ max);
+    }
+    public void sum(int...a){
+        int sum=0;
+        for(int i=0;i<a.length;i++){
+            sum+=a[i];
+        }
+        System.out.println("Sum is "+ sum);
+        
+    }
+
+    void lower(String s1) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
+    
+    
+        
+}
+
+class gk{
+        public static void main(String[] args) {
+            Q3 t=new Q3();
+            t.no_of_Arguments(10,20,30,40);
+            t.max(10,20,30,40);
+            t.sum(10,20,30,40);
+            //t.no_of_Arguments(10,20,30,40,c);
+        }
+}
+    
+
+    
+
+   
+
+
