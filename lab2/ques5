@@ -1,0 +1,32 @@
+package lab3;
+public class q5{
+        public void sum(int arr[]){
+            int sum=0;
+            for(int i=0;i<arr.length;i++){
+                sum+=arr[i];
+            }
+            System.out.println("sum ="+sum);
+        }
+        public void reverse(int arr[]){
+            for(int i=arr.length-1;i>=0;i--){
+                System.out.print(arr[i]+" ");
+                
+            }
+        }
+    
+}
+class ck{
+    public static void main(String[] args) {
+        q5 t = new q5();
+        t.sum(new int[]{10,20,30,40});
+        t.reverse(new int[]{10,20,30,40});
+    
+        
+    }
+        
+    
+    
+
+    
+}
+
