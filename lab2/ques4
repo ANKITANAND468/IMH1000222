@@ -1,0 +1,29 @@
+
+package lab3;
+
+
+public class Q4 {
+    public void lower(String s){
+        String lower=s.toLowerCase();
+        System.out.println("after conversion string becomes "+ lower);
+    }
+    public void length(String s){
+        int n=s.length();
+        System.out.println("length of string is = "+n);
+    }
+    
+}
+class kt{
+    public static void main(String[] args){ 
+        Q4 t=new Q4();
+        char c[]={'S','a','n','C','h','i','t'};
+        String s1= new String(c);
+        t.lower(s1);
+        t.length(s1);
+    
+        
+    }
+    
+    
+}
+
