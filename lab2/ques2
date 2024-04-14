@@ -1,0 +1,45 @@
+
+      
+import java.util.Scanner;
+public class Q2 {
+    
+    
+    static boolean validate(String s){
+        for(int i=0;i<s.length();i++){
+            if(!Character.isLetter(s.charAt(i))){
+                return false;
+            
+            }
+                
+        }
+        return true;
+        
+    }
+    static boolean validate(int age){
+        if(age>3 && age<15){
+            return true;
+        }
+        return false;
+        
+    }
+    
+}
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter name:");
+        String name =s.nextLine();
+        System.out.println("Enter Age");
+        int Age=s.nextInt();
+        Q2 t=new Q2();
+        if(t.validate(name)){
+            System.out.println("All char is Alphbhet");
+        }
+        if(t.validate(Age)){
+            System.out.println("Age is between 3 and 15");
+        }
+        
+        
+    }
+}
