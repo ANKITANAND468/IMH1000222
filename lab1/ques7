@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+
+public class q7 {
+          public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); 
+        System.out.println("Enter n : ");   
+        int n =sc.nextInt();
+        int arr[]=new int[n];
+        System.out.println("Enter the position from where to split index : "); 
+        int g =sc.nextInt();
+        int arr1[]=new int[n];
+        int arr2[]=new int[n];
+              System.out.println("Enter alement of main Array :");
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int j=0,k=0;
+        for(int i=0;i<n;i++){
+            if(i<=g){
+                arr1[j]=arr[i];
+                j++;
+            }
+            else{
+                arr2[k]=arr[i];
+                k++;
+            }
+        }
+        System.out.println("arr1");
+        for(int h=0;h<j;h++){
+            System.out.print(arr1[h]+" ");
+        }
+        for(int h=0;h<j;h++){
+            int c =0;
+            for(int f=0;f<j;f++){
+                if(arr1[h]==arr1[f]){
+                   c++; 
+                }
+            }
+            System.out.println("Element "+arr1[h]+" has frequency "+c);
+                    
+        }
+        System.out.println(" arr2");
+        for(int h=0;h<k;h++){
+            System.out.print(arr2[h]+" ");
+        }
+        for(int h=0;h<k;h++){
+            
+            int c =0;
+            for(int f=0;f<j;f++){
+                if(arr2[h]==arr2[f]){
+                   c++; 
+                }
+            }
+            System.out.println("Element "+arr2[h]+" has frequency "+c);
+                    
+        }
+        
+      
+    }
+
+    
+}
+
+
