@@ -1,4 +1,4 @@
-package lab8;
+package lab7;
 class Outer{
     class Inner{
         void display(){
