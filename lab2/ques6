@@ -1,0 +1,25 @@
+package lab3;
+public class q6 {
+    public void dispaly(int a){
+        System.out.println(" int "+a);
+    }
+    public void display(double a){
+        System.out.println("double "+a);
+    }
+        
+    
+}
+class tk{
+    public static void main(String[] args) {
+        q6 t=new q6();
+        t.display('s');
+        t.display(3);
+        t.display(4.7);
+    }
+        
+ 
+       
+        
+     
+}
+
