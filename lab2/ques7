@@ -1,0 +1,28 @@
+package lab3;
+import java.util.Scanner;
+public class q7 {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the size of array");
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("Enter K");
+        int k=sc.nextInt();
+        int p=0;
+        for(int i=0;i<n;i++){
+            for(int j=i;j<n;j++){
+                if(arr[i]+arr[j]==k){
+                    p++;
+                    
+                }
+            }
+        }
+        System.out.println("No of pairs whose sum is "+k+" is "+p);
+       
+    }
+}
+
+
